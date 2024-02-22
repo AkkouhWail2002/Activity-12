@@ -1,0 +1,26 @@
+document.getElementById("btn1").onclick=function(){
+    document.getElementById("login1").style.transform="rotateY(90deg)";
+    document.getElementById("login2").style.transform="rotateY(0deg)";
+}
+document.getElementById("btn2").onclick=function(){
+    document.getElementById("login2").style.transform="rotateY(90deg)";
+    document.getElementById("login1").style.transform="rotateY(0deg)";
+}
+document.getElementById("open_close").onclick=function(){
+    if(document.getElementById("login").style.display=="block"){
+        document.getElementById("login").style.display="none";
+    }else{
+        document.getElementById("login").style.display="block";
+    }
+}
+document.getElementById("close").onclick=function(){
+    document.getElementById("login").style.display="none";
+}
+document.getElementById("ck").onchange=function(){
+    if(document.getElementById("ck").checked){
+        document.getElementById("pass").removeAttribute("type");
+    }
+    else{
+        document.getElementById("pass").setAttribute("type","password");
+    }
+}

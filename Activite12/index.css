@@ -1,0 +1,344 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  background-image: url("Photo/pexels-johannes-plenio-3131634.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing .side-bar {
+  width: 100%;
+  height: 12%;
+  padding-left: 8%;
+  padding-right: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.landing .side-bar h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.landing .side-bar ul {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.landing .side-bar ul li {
+  position: relative;
+}
+.landing .side-bar ul li:not(:last-child)::before {
+  content: "";
+  width: 10%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  visibility: hidden;
+}
+.landing .side-bar ul li:hover:not(:last-child) a {
+  font-weight: bold;
+}
+.landing .side-bar ul li:hover::before {
+  width: 100%;
+  visibility: visible;
+}
+.landing .side-bar ul li:hover:last-child {
+  background-color: rgba(245, 245, 245, 0.7215686275);
+  border: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  color: rgba(0, 0, 0, 0.631372549);
+}
+.landing .side-bar ul li a {
+  font-size: 17.5px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.landing .side-bar ul li:last-child {
+  padding: 1.5% 3%;
+  border: 2px #f5f5f5 solid;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17.5px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.landing #login {
+  width: 35%;
+  height: 65%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 2px #fff solid;
+  border-radius: 15px;
+  display: none;
+}
+.landing #login > img {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 40px;
+  height: 40px;
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px;
+  cursor: pointer;
+}
+.landing #login .login-content {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2666666667);
+  position: relative;
+}
+.landing #login .login-content span {
+  font-weight: bold;
+  cursor: pointer;
+}
+.landing #login .login-content #login1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  padding: 8%;
+}
+.landing #login .login-content #login1 form {
+  width: 100%;
+  height: 100%;
+}
+.landing #login .login-content #login1 form h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 45px;
+  margin-bottom: 10%;
+  color: #043e52;
+  letter-spacing: 0.1em;
+}
+.landing #login .login-content #login1 form .email, .landing #login .login-content #login1 form .pass {
+  width: 100%;
+  height: 15%;
+  margin-bottom: 5%;
+  border-bottom: 2px #000 solid;
+  position: relative;
+}
+.landing #login .login-content #login1 form .email > input, .landing #login .login-content #login1 form .pass > input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-left: 2%;
+}
+.landing #login .login-content #login1 form .email > input::-webkit-input-placeholder, .landing #login .login-content #login1 form .pass > input::-webkit-input-placeholder {
+  color: #016a6d;
+  text-transform: capitalize;
+}
+.landing #login .login-content #login1 form .email > input::-moz-placeholder, .landing #login .login-content #login1 form .pass > input::-moz-placeholder {
+  color: #016a6d;
+  text-transform: capitalize;
+}
+.landing #login .login-content #login1 form .email > input:-ms-input-placeholder, .landing #login .login-content #login1 form .pass > input:-ms-input-placeholder {
+  color: #016a6d;
+  text-transform: capitalize;
+}
+.landing #login .login-content #login1 form .email > input::-ms-input-placeholder, .landing #login .login-content #login1 form .pass > input::-ms-input-placeholder {
+  color: #016a6d;
+  text-transform: capitalize;
+}
+.landing #login .login-content #login1 form .email > input::placeholder, .landing #login .login-content #login1 form .pass > input::placeholder {
+  color: #016a6d;
+  text-transform: capitalize;
+}
+.landing #login .login-content #login1 form .email img, .landing #login .login-content #login1 form .pass img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.landing #login .login-content #login1 form input[type=checkbox] {
+  float: left;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  accent-color: #016a6d;
+}
+.landing #login .login-content #login1 form input[type=submit] {
+  width: 100%;
+  height: 12%;
+  cursor: pointer;
+  background-color: #043e52;
+  color: #fff;
+  margin-bottom: 5%;
+  font-size: 17.5px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  border-radius: 20px;
+  border: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.landing #login .login-content #login1 form input[type=submit]:hover {
+  background-color: #016a6d;
+}
+.landing #login .login-content #login1 form label {
+  float: left;
+  cursor: pointer;
+}
+.landing #login .login-content #login1 form p {
+  text-transform: capitalize;
+}
+.landing #login .login-content #login1 form p:first-of-type {
+  float: right;
+  color: #fff;
+  cursor: pointer;
+}
+.landing #login .login-content #login1 form p:last-of-type {
+  text-align: center;
+}
+.landing #login .login-content #login1 form p:last-of-type span {
+  color: #016a6d;
+}
+.landing #login .login-content #login2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  padding: 8%;
+}
+.landing #login .login-content #login2 form {
+  width: 100%;
+  height: 100%;
+}
+.landing #login .login-content #login2 form h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 45px;
+  margin-bottom: 10%;
+  color: #043e52;
+  letter-spacing: 0.1em;
+}
+.landing #login .login-content #login2 form .email, .landing #login .login-content #login2 form .pass, .landing #login .login-content #login2 form .user {
+  width: 100%;
+  height: 12%;
+  margin-bottom: 5%;
+  border-bottom: 2px #000 solid;
+  position: relative;
+}
+.landing #login .login-content #login2 form .email input, .landing #login .login-content #login2 form .pass input, .landing #login .login-content #login2 form .user input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-left: 2%;
+}
+.landing #login .login-content #login2 form .email input::-webkit-input-placeholder, .landing #login .login-content #login2 form .pass input::-webkit-input-placeholder, .landing #login .login-content #login2 form .user input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: #016a6d;
+}
+.landing #login .login-content #login2 form .email input::-moz-placeholder, .landing #login .login-content #login2 form .pass input::-moz-placeholder, .landing #login .login-content #login2 form .user input::-moz-placeholder {
+  text-transform: capitalize;
+  color: #016a6d;
+}
+.landing #login .login-content #login2 form .email input:-ms-input-placeholder, .landing #login .login-content #login2 form .pass input:-ms-input-placeholder, .landing #login .login-content #login2 form .user input:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #016a6d;
+}
+.landing #login .login-content #login2 form .email input::-ms-input-placeholder, .landing #login .login-content #login2 form .pass input::-ms-input-placeholder, .landing #login .login-content #login2 form .user input::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #016a6d;
+}
+.landing #login .login-content #login2 form .email input::placeholder, .landing #login .login-content #login2 form .pass input::placeholder, .landing #login .login-content #login2 form .user input::placeholder {
+  text-transform: capitalize;
+  color: #016a6d;
+}
+.landing #login .login-content #login2 form .email img, .landing #login .login-content #login2 form .pass img, .landing #login .login-content #login2 form .user img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.landing #login .login-content #login2 form input[type=checkbox] {
+  margin-bottom: 5%;
+  accent-color: #016a6d;
+  margin-right: 1%;
+}
+.landing #login .login-content #login2 form input[type=submit] {
+  width: 100%;
+  height: 12%;
+  background-color: #043e52;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  text-transform: capitalize;
+  font-size: 17.5px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  margin-bottom: 5%;
+}
+.landing #login .login-content #login2 form input[type=submit]:hover {
+  background-color: #016a6d;
+}
+.landing #login .login-content #login2 form label {
+  cursor: pointer;
+}
+.landing #login .login-content #login2 form p {
+  text-align: center;
+  text-transform: capitalize;
+}
+.landing #login .login-content #login2 form p span {
+  color: #016a6d;
+}
